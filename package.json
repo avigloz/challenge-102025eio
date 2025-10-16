@@ -1,0 +1,33 @@
+{
+  "name": "task-management-api",
+  "version": "1.0.0",
+  "description": "A RESTful task management API built with Bun, Fastify, and MongoDB",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+   "scripts": {
+     "dev": "bun run --watch index.ts",
+     "start": "bun run index.ts",
+     "test": "bun test",
+     "test:watch": "bun test --watch",
+     "lint": "eslint src/**/*.ts tests/**/*.ts index.ts",
+     "lint:fix": "eslint --fix src/**/*.ts tests/**/*.ts index.ts",
+     "format": "prettier --write src/**/*.ts tests/**/*.ts index.ts"
+   },
+   "devDependencies": {
+     "@types/bun": "latest",
+     "@types/node": "^24.8.0",
+     "eslint": "^8.57.0",
+     "@typescript-eslint/eslint-plugin": "^7.0.0",
+     "@typescript-eslint/parser": "^7.0.0",
+     "prettier": "^3.2.5"
+   },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "fastify": "^5.6.1",
+    "mongoose": "^8.19.1"
+  }
+}
